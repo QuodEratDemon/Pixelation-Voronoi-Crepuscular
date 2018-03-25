@@ -1,5 +1,8 @@
 # Pixelization, Voronoi Caustics, and Crepescular Rays
 
+## Video Highlights
+https://youtu.be/iwlE4D7uNxA
+
 ## Team members: 
 * Andrew Gwinner, Jacob Le, Nick Ho
 
