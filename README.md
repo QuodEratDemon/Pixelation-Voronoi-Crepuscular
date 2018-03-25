@@ -18,3 +18,4 @@ https://youtu.be/iwlE4D7uNxA
 
 ## Instructions for running the project:
 * Make sure your browser supports Unity WebGL if encounter a problem.
+* Adjust sliders to interact.
