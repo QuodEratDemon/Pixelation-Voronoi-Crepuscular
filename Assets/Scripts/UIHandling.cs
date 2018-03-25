@@ -7,12 +7,14 @@ public class UIHandling : MonoBehaviour {
 
 	Text buttonText;
 	GameObject PixelizerUI;
+	GameObject GodRayUI;
 	bool PixelizerUIIsActive = true;
 	Pixelizer pixelizer;
 
 	// Use this for initialization
 	void Start () {
 		PixelizerUI = transform.parent.Find ("Pixelizer").gameObject;
+		GodRayUI = transform.parent.Find ("God Ray UI").gameObject;
 		buttonText = GetComponentInChildren<Text> ();
 		GameObject[] mainCameras = GameObject.FindGameObjectsWithTag ("MainCamera");
 		for (int i = 0; i < mainCameras.Length; i++) {
@@ -26,9 +28,11 @@ public class UIHandling : MonoBehaviour {
 	public void togglePixelizerUIOn(){
 		if (PixelizerUIIsActive) {
 			PixelizerUI.SetActive (false);
+			GodRayUI.SetActive (false);
 			buttonText.text = "Show UI";
 		} else {
 			PixelizerUI.SetActive (true);
+			GodRayUI.SetActive (true);
 			buttonText.text = "Hide UI";
 		}
 		PixelizerUIIsActive = !PixelizerUIIsActive;
